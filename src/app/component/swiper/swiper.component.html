@@ -1,0 +1,21 @@
+<div class="news-container">
+    <swiper
+      [slidesPerView]="3"
+      [spaceBetween]="30"
+      [navigation]="true"
+      [pagination]="{ clickable: true }"
+      class="mySwiper"
+    >
+      <ng-container *ngFor="let news of newsList">
+        <ng-template swiperSlide>
+          <div class="news-card">
+            <img [src]="news.image" alt="News Image" />
+            <h3>{{ news.title }}</h3>
+            <p>{{ news.date }}</p>
+            <a [href]="news.link">Batafsil</a>
+          </div>
+        </ng-template>
+      </ng-container>
+    </swiper>
+  </div>
+  

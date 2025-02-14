@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { material_imports } from './shared/material-import';
 import { NavigationComponent } from './component/navigation/navigation.component';
-
+import { SwiperComponent } from './component/swiper/swiper.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
+    SwiperComponent,
     
   ],
   imports: [
